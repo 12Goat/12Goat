@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Entities/Player/Player.gd" type="Script" id=1]
+[ext_resource path="res://Entities/Player/icon.png" type="Texture" id=2]
+[ext_resource path="res://map_tiles.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 32.1615, 31.9586 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 94.4084, 137.562 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" type="KinematicBody2D" parent="."]
+z_index = 1
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="Player"]
+position = Vector2( 77, 506 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2( 77.1186, 505.976 )
+shape = SubResource( 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="StaticBody2D"]
+position = Vector2( 391.11, 442.861 )
+scale = Vector2( 2.35, 2.14844 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 391.179, 442.965 )
+shape = SubResource( 2 )
