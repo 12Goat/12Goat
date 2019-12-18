@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Buttons/Finding%20Kennay (play).png" type="Texture" id=1]
+[ext_resource path="res://Buttons/NewGame.gd" type="Script" id=2]
+
+[node name="Play" type="Button"]
+margin_bottom = 115.0
+icon = ExtResource( 1 )
+flat = true
+script = ExtResource( 2 )
+[connection signal="pressed" from="." to="." method="_on_Play_pressed"]

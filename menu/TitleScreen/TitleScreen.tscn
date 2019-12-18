@@ -1,0 +1,51 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Finding%20Kennay (title).png" type="Texture" id=1]
+[ext_resource path="res://Buttons/Play.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Buttons/Settings.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Buttons/Info.tscn" type="PackedScene" id=4]
+
+[node name="TitleScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Menu" type="VBoxContainer" parent="."]
+light_mask = 0
+margin_left = 60.0
+margin_top = 40.0
+margin_right = 500.0
+margin_bottom = 500.0
+
+[node name="Logo" type="TextureRect" parent="Menu"]
+light_mask = 0
+margin_right = 485.0
+margin_bottom = 240.0
+texture = ExtResource( 1 )
+stretch_mode = 4
+
+[node name="CenterRow" type="HBoxContainer" parent="Menu"]
+light_mask = 0
+margin_top = 244.0
+margin_right = 485.0
+margin_bottom = 551.0
+size_flags_vertical = 3
+
+[node name="Buttons" type="VBoxContainer" parent="Menu/CenterRow"]
+light_mask = 0
+margin_right = 485.0
+margin_bottom = 307.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Play" parent="Menu/CenterRow/Buttons" instance=ExtResource( 2 )]
+light_mask = 0
+margin_right = 485.0
+scene_to_load = "res://Game/NewGame.tscn"
+
+[node name="Settings" parent="Menu/CenterRow/Buttons" instance=ExtResource( 3 )]
+light_mask = 0
+scene_to_load = "res://Game/Settings.tscn"
+
+[node name="Info" parent="Menu/CenterRow/Buttons" instance=ExtResource( 4 )]
+light_mask = 0
+margin_right = 485.0
