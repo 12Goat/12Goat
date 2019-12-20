@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/after kennay gets taken away cut scene - now you play platformer.wav-3ee522c339301587d6eacb4645837d11.sample"
+
+[deps]
+
+source_file="res://music/after kennay gets taken away cut scene - now you play platformer.wav"
+dest_files=[ "res://.import/after kennay gets taken away cut scene - now you play platformer.wav-3ee522c339301587d6eacb4645837d11.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
